@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: stream
+      POSTGRES_PASSWORD: stream
+      POSTGRES_DB: streamdb
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+
+  localstack:
+    image: localstack/localstack:3.0
+    ports: ["4566:4566"]
+    environment:
+      - SERVICES=s3,sqs
+      - DEFAULT_REGION=us-east-1
+      - EAGER_SERVICE_LOADING=1
+
+volumes:
+  pgdata:
