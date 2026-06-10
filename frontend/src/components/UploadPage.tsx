@@ -217,7 +217,6 @@ export function UploadPage() {
           <p style={{ marginTop: 12, color: "#666", fontSize: 13, lineHeight: 1.6 }}>
             FFmpeg is converting your video to 360p / 720p / 1080p HLS segments.
             This takes 1–5 minutes depending on video length.
-            Subtitles are being generated in parallel via Whisper AI.
           </p>
         </div>
       )}
