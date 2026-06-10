@@ -1,4 +1,4 @@
-# StreamFlow 🎬
+# StreamFlow 
 
 A full-stack adaptive bitrate video streaming platform built with the same core technology used by Netflix, YouTube, and TikTok.
 
