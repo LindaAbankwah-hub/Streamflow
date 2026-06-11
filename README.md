@@ -2,6 +2,10 @@
 
 A full-stack adaptive bitrate video streaming platform built with the same core technology used by Netflix, YouTube, and TikTok.
 
+## What is Adaptive Bitrate Streaming?
+
+When you watch Netflix and your internet slows down the video quality drops automatically without buffering. This project implements that from scratch using FFmpeg and HLS.js.
+
 ## Demo
 
 ![StreamFlow Homepage](screenshot1.png)
